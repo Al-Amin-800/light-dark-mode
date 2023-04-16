@@ -1,0 +1,166 @@
+:root{
+    --bg-color: white;
+    --primaryColor: #101524;
+}
+
+.darkmode{
+    --bg-color: #101524;
+    --primaryColor: white;
+    transition: 0.3s ease;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/** light/dark mode starts */
+body{
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: arial;
+    transition: 0.3s;
+    cursor: none;
+}
+
+#wrapper{
+    display: flex;
+}
+
+h2{
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-right: 15px;
+    color: var(--primaryColor);
+     
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+button .sun,
+button .moon{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    transition: 0.3s;
+}
+button .sun{
+    background-color:whitesmoke;
+    border:1px solid black;
+    color:black;
+    border-radius: 5px;
+
+}
+button .moon{
+    background-color: #101524;
+    color: white;
+    border:1px solid #ddd;
+    border-radius: 5px;
+}
+/* light/dark mode end */
+
+/* *custom cursor starts here */
+.cursor{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    /* border: 1px solid var(--primaryColor); */
+   
+    position: absolute;
+    top: 0px;
+    left:0px;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    
+}
+.cursor span{
+    font-size: 25px;
+}
+
+
+.cursor_one{
+    width: 50px;
+    height: 50px;
+    /* background-color: var(--primaryColor); */
+    border: 1px solid var(--primaryColor);
+     border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+.cursor_two{
+    width: 40px;
+    height: 40px;
+    /* background-color: var(--primaryColor); */
+    border: 1px solid var(--primaryColor);
+     border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+.cursor_three{
+    width: 30px;
+    height: 30px;
+    /* background-color: var(--primaryColor); */
+    border: 1px solid var(--primaryColor);
+     border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+.cursor_four{
+    width: 20px;
+    height: 20px;
+    /* background-color: var(--primaryColor); */
+    border: 1px solid var(--primaryColor);
+     border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+.cursor_five{
+    width: 10px;
+    height: 10px;
+    background-color: var(--primaryColor);
+    /* border: 1px solid var(--primaryColor); */
+     border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+/* custom cursor end */
